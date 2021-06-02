@@ -35584,39 +35584,35 @@ const App = () => {
         value: theme,
         children:
         /*#__PURE__*/
-        (0, _jsxRuntime.jsx)("div", {
-          children:
+        (0, _jsxRuntime.jsxs)("div", {
+          children: [
           /*#__PURE__*/
-          (0, _jsxRuntime.jsxs)(Router, {
+          (0, _jsxRuntime.jsx)("header", {
+            children:
+            /*#__PURE__*/
+            (0, _jsxRuntime.jsx)(_reactRouterDom.Link, {
+              to: "/",
+              children: "Adopt Me!"
+            })
+          }),
+          /*#__PURE__*/
+          (0, _jsxRuntime.jsxs)(_reactRouterDom.Switch, {
             children: [
             /*#__PURE__*/
-            (0, _jsxRuntime.jsx)("header", {
+            (0, _jsxRuntime.jsx)(_reactRouterDom.Route, {
+              path: "/details/:id",
               children:
               /*#__PURE__*/
-              (0, _jsxRuntime.jsx)(_reactRouterDom.Link, {
-                to: "/",
-                children: "Adopt Me!"
-              })
+              (0, _jsxRuntime.jsx)(_Details.default, {})
             }),
             /*#__PURE__*/
-            (0, _jsxRuntime.jsxs)(_reactRouterDom.Switch, {
-              children: [
+            (0, _jsxRuntime.jsx)(_reactRouterDom.Route, {
+              path: "/",
+              children:
               /*#__PURE__*/
-              (0, _jsxRuntime.jsx)(_reactRouterDom.Route, {
-                path: "/details/:id",
-                children:
-                /*#__PURE__*/
-                (0, _jsxRuntime.jsx)(_Details.default, {})
-              }),
-              /*#__PURE__*/
-              (0, _jsxRuntime.jsx)(_reactRouterDom.Route, {
-                path: "/",
-                children:
-                /*#__PURE__*/
-                (0, _jsxRuntime.jsx)(_SearchParams.default, {})
-              })]
+              (0, _jsxRuntime.jsx)(_SearchParams.default, {})
             })]
-          })
+          })]
         })
       })
     })
@@ -35673,7 +35669,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "35253" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "40425" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

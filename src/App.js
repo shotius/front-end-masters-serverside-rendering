@@ -10,7 +10,6 @@ const App = () => {
     <StrictMode>
       <ThemeContext.Provider value={theme}>
         <div>
-          <Router>
             <header>
               <Link to="/">Adopt Me!</Link>
             </header>
@@ -22,11 +21,10 @@ const App = () => {
                 <SearchParams />
               </Route>
             </Switch>
-          </Router>
         </div>
       </ThemeContext.Provider>
     </StrictMode>
   );
 };
-
 export default App
+
